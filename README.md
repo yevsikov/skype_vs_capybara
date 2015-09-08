@@ -1,6 +1,7 @@
-    # skype_vs_capybara
-    #rails generate integration_test getting_to_site
-    #rake test:integration TEST=test/integration/getting_to_skype_test.rb
+    #skype_vs_capybara
+    #rails generate integration_test getting_to_skype #use to create
+    #rake test:integration TEST=test/integration/getting_to_skype_test.rb #use to run
+    
     require 'test_helper'
     #require 'capybara/dsl'
     require 'rubygems'
@@ -23,7 +24,7 @@
       array_of_messages = [ 'Good morning', 
       								'good morning!', 
       								'Hello!)',
-      								'Good morning :)',
+      								'Good morning (coffee)',
       								'Good morning! =)',
       								'Morning!;)',
       								'Good morning (sun)',
@@ -36,7 +37,7 @@
       my_name = 'MY NAME'
       chat_name = 'CHAT NAME'
   
-      go_to_skype_link = 'Try Skype for Web (Beta)'	
+      go_to_skype_link = "Try Skype for Web (Beta)"	
       search_xpath = "//a[@class='searchItem']/span[@class='text']/span[@class='tileName']/h4[1]"
       send_button_xpath = "//swx-button/button[@class='btn circle send-button large']/span[@class='iconfont send']"
       account_title = "my account"
@@ -45,8 +46,8 @@
       message_input_field = "messageInput"
       sign_in_button = "signIn"
   
-      screen_folder = 'test/integration/screens/'
-      screen_file = screen_folder + Time.now.strftime("%s")+'.png'
+      screen_folder = "test/integration/screens/"
+      screen_file = screen_folder + Time.now.strftime("%s")+".png"
 
       puts "Getting to site"  
       visit '/'
@@ -67,6 +68,7 @@
       sleep(8.seconds)
       assert page.has_content? my_name 
       puts "Searching of conversation"   
+      
       fill_in query_field, :with => chat_name   
       sleep(6.seconds) 
       find(:xpath, search_xpath).click
@@ -77,11 +79,7 @@
       
       #puts "Screenshot saving"
       page.save_screenshot screen_file
-       
-    
       
       end
 
-    
-    
     end
