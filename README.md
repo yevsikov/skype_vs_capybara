@@ -38,7 +38,7 @@
       chat_name = 'CHAT NAME'
   
       go_to_skype_link = "Try Skype for Web (Beta)"	
-      search_xpath = "//a[@class='searchItem']/span[@class='text']/span[@class='tileName']/h4[1]"
+      search_xpath = "//a[@class='searchItem clearfix']/span[@class='text']/span[@class='tileName']/h4[1]"
       send_button_xpath = "//swx-button/button[@class='btn circle send-button large']/span[@class='iconfont send']"
       account_title = "my account"
       signing_title = "signing"
