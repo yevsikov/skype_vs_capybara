@@ -1,5 +1,3 @@
-   skype_vs_capybara
-   <br>
    skype bot
    <br>
-   look at autotest.rb
+   look at <a href="https://github.com/yevsikov/skype_vs_capybara/blob/master/autotest.rb">autotest.rb</a>
