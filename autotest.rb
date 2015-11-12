@@ -22,15 +22,15 @@
       test 'should_get_to_the_skype' do
       
       array_of_messages = [ 'Good morning', 
-      								'good morning!', 
-      								'Hello!)',
-      								'Good morning (coffee)',
-      								'Good morning! =)',
-      								'Morning!;)',
-      								'Good morning (sun)',
-      								'(*) good morning!',
-      								'Morning! (wave)',
-      								'(y) Good morning']
+      						'good morning!', 
+      						'Hello!)',
+      						'Good morning (coffee)',
+      						'Good morning! =)',
+      						'Morning!;)',
+      						'Good morning (sun)',
+      						'(*) good morning!',
+      						'Morning! (wave)',
+      						'(y) Good morning']
 
       login = 'LOGIN'
       pass = 'PASSWORD'
@@ -49,7 +49,7 @@
       screen_folder = "test/integration/screens/"
       screen_file = screen_folder + Time.now.strftime("%s")+".png"
 
-
+      #starting of work
       puts "Getting to site"  
       visit '/'
       fill_in('username', :with => login)
