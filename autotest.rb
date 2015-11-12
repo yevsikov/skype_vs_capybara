@@ -49,12 +49,12 @@
       screen_folder = "test/integration/screens/"
       screen_file = screen_folder + Time.now.strftime("%s")+".png"
 
+
       puts "Getting to site"  
       visit '/'
       fill_in('username', :with => login)
       fill_in('password', :with => pass)
       find_button(sign_in_button).click
-    
     
       puts "Waiting..."  
       wait = Selenium::WebDriver::Wait.new(:timeout => 20)
