@@ -87,3 +87,5 @@ work. However the main goal of the experiment been reached – I have had a lot 
 to automate my daily commuting or cooking of borscht. See you on Skype!
 
 ![The End](https://github.com/yevsikov/skype_vs_capybara/blob/master/images/008.png)
+
+Vlad Yevsikov (c) 2015
